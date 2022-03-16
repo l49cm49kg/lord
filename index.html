@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lordpay</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Pen+Script&display=swap');
@@ -14,15 +15,15 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
   </script>
-  <meta charset="UTF-8">
+ 
 </head>
 
 
 
-<body class="container">
-
-  <div id="block1">
-    <a href="https://imgur.com/DCoq220"><img src="https://i.imgur.com/DCoq220.png" title="source: imgur.com" style="display:block; margin:auto; width: 200px";/></a>
+<body>
+  <div class="body-box min-vw-50  vw-25">
+    <div id="block1">
+    <a href="https://imgur.com/DCoq220"><img src="https://i.imgur.com/DCoq220.png" title="source: imgur.com" style="display:block; margin:auto; padding:30px 0 0 0 ;width: 200px";/></a>
 
     <div class="container">
       <h3>선불카드 구매 등록</h3><span class="register">등록 안내</span>
@@ -33,9 +34,9 @@
 
     <div class="block1-btn-box column">
 
-      <button class="btn btn-outline-dark col-6" type="button" >휴대폰인증</button> <!--  <button type="button" class="btn btn-outline-dark">등록정보 불러오기</button> -->
+      <button class="btn btn-outline-dark col-6 shadow-sm" type="button" >휴대폰인증</button> <!--  <button type="button" class="btn btn-outline-dark">등록정보 불러오기</button> -->
       <!-- Button trigger modal -->
-      <button class="btn btn-outline-dark col-6" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button">등록정보 불러오기</button> 
+      <button class="btn btn-outline-dark col-6 shadow-sm" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button">등록정보 불러오기</button> 
 
     </div>
 
@@ -49,8 +50,8 @@
             <div class="modal-header">
               <h5 class="modal-title" id="staticBackdropLabel"></h5><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
             </div>
-            <div class="modal-body">
-              <p>선불카드 재구매시 기존에 등록하신 정보를 입력하시면 빠르게 이용하실수 있습니다.</p>
+            <div class="modal-body" >
+              <p style="font-weight:600;">선불카드 재구매시 기존에 등록하신 정보를 <br> 입력하시면 빠르게 이용하실수 있습니다.</p> <br> 
               <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label" for="inputPassword">전화번호</label>
                 <div class="col-sm-10">
@@ -82,7 +83,7 @@
     </div>
   </div>
 
-  <hr style="border: 0.3px solid #000; opacity:1;">
+  <hr style="border: 0.5px solid #000; opacity:0.3;">
   
   <div id="block2">
     
@@ -143,8 +144,10 @@
     <div class="mb-3">
         <label class="form-label" for="">구매금액</label>
         <div class="input-group mb-3">
-          <input aria-describedby="basic-addon2" aria-label="Recipient's username" class="form-control" placeholder="" type="text"> <span class="input-group-text" id="basic-addon2">원</span>
+          <input aria-describedby="basic-addon2" aria-label="Recipient's username" class="form-control" placeholder="" type="text"> <span class="input-group-text" id="basic-addon2">원</span>         
         </div>
+        <small>- 최소 1천원, 최대 100만원까지 구매가능 합니다. (천원 단위 입력)
+            </small>
     </div>
 
     <div class="mb-3">
@@ -191,13 +194,13 @@
 
     </div>
     
-    <div class="mb-3 container">
+    <div class="mb-5 mt-5 container">
 
       <div class="block2-btn-box">
-        <button class="btn btn-secondary btn-md col-6" type="button">취소하기</button>
+        <button class="btn btn-secondary btn-md col-6 shadow-sm" type="button">취소하기</button>
 
        <!-- Button trigger modal -->
-        <button class="btn btn-primary btn-md col-6" data-bs-target="#exampleModal" data-bs-toggle="modal" id="button-addon2" type="button">등록하기</button> 
+        <button class="btn btn-primary btn-md col-6 shadow-sm" data-bs-target="#exampleModal" data-bs-toggle="modal" id="button-addon2" type="button">등록하기</button> 
 
         <!-- Modal -->
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
@@ -221,11 +224,15 @@
 
     </div>
   
+
+  </div>
+
+  
 </body>
 
 
-<footer class="footer">
-    <div class="container footer-box">
+<footer class="footer container-fluid ">
+    <div class="footer-box">
       <div class="footer-text">
        <a href="https://www.youtube.com/" >상담 채팅 바로가기</a>
        <p>(평일 10:00 ~ 17:00)</p><br><br><br><br><br>
