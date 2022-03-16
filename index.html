@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lordpay</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Pen+Script&display=swap');
+  </style>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
+  </script>
+ 
+</head>
+
+
+
+<body>
+  <div class="body-box min-vw-50  vw-25">
+    <div id="block1">
+    <a href="https://imgur.com/DCoq220"><img src="https://i.imgur.com/DCoq220.png" title="source: imgur.com" style="display:block; margin:auto; padding:30px 0 0 0 ;width: 200px";/></a>
+
+    <div class="container">
+      <h3>선불카드 구매 등록</h3><span class="register">등록 안내</span>
+      <div class="register-info">
+        - 비회원의 경우, 선불 카드 구매를 위한 입금계좌 등록이 필요합니다.<br>
+        <font color="red">- 보이스피싱 및 입금 사기 방지를 위하여 구매자의 올바른 정보를 입력하세요.</font>
+      </div>
+
+    <div class="block1-btn-box column">
+
+      <button class="btn btn-outline-dark col-6 shadow-sm" type="button" >휴대폰인증</button> <!--  <button type="button" class="btn btn-outline-dark">등록정보 불러오기</button> -->
+      <!-- Button trigger modal -->
+      <button class="btn btn-outline-dark col-6 shadow-sm" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button">등록정보 불러오기</button> 
+
+    </div>
+
+      
+
+
+      <!-- Modal -->
+      <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdrop" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"></h5><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body" >
+              <p style="font-weight:600;">선불카드 재구매시 기존에 등록하신 정보를 <br> 입력하시면 빠르게 이용하실수 있습니다.</p> <br> 
+              <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label" for="inputPassword">전화번호</label>
+                <div class="col-sm-10">
+                  <input aria-label="default input example" class="form-control" placeholder="" type="text">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label" for="inputPassword">생년월일</label>
+                <div class="col-sm-10">
+                  <input aria-label="default input example" class="form-control" placeholder="YYYYMMDD" type="text">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label" for="inputPassword">비말번호</label>
+                <div class="col-sm-10">
+                  <input aria-label="default input example" class="form-control" placeholder="" type="password">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal" type="button">등록정보 불러오기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end-->
+    
+
+    </div>
+  </div>
+
+  <hr style="border: 0.5px solid #000; opacity:0.3;">
+  
+  <div id="block2">
+    
+    <div class="mb-3">
+      <label class="form-label" for="">성명</label> 
+      <input aria-label="default input example" class="form-control" placeholder="" type="text">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="">전화번호</label>
+       <input aria-label="default input example" class="form-control" placeholder="" type="text">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="">은행</label> 
+      <select aria-label="Default select example" class="form-select">
+        <option selected>
+          :: 은행 선택 ::
+        </option>
+        <option value="1">
+          신한은행
+        </option>
+        <option value="2">
+          우리은행
+        </option>
+        <option value="3">
+          국민은행
+        </option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="">계좌번호</label>
+      <div class="input-group mb-3">
+        <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control" placeholder="" type="text"> 
+
+        <!-- Button trigger modal -->
+        <button class="btn btn-outline-secondary" data-bs-target="#exampleModal" data-bs-toggle="modal" id="button-addon2" type="button">계좌확인</button> 
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content container">
+              <div class="modal-body row justify-content-center">
+                먼저 본인인증을 해주세요.
+              </div>
+              <div class="modal-footer row">
+                <button class="btn btn-primary justify-content-center" data-bs-dismiss="modal" type="button">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>  
+         <!-- Modal end -->
+
+    <div class="mb-3">
+        <label class="form-label" for="">구매금액</label>
+        <div class="input-group mb-3">
+          <input aria-describedby="basic-addon2" aria-label="Recipient's username" class="form-control" placeholder="" type="text"> <span class="input-group-text" id="basic-addon2">원</span>         
+        </div>
+        <small>- 최소 1천원, 최대 100만원까지 구매가능 합니다. (천원 단위 입력)
+            </small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="">비회원 비밀번호</label> 
+        <input class="form-control" id="inputPassword" type="password">
+    </div>
+
+    <div class="check-block mb-3">
+
+        <div class="form-check">
+
+        
+
+
+
+
+          <input class="form-check-input" id="flexCheckDefault" type="checkbox" value=""> 
+          <!-- <label class="form-check-label" for="flexCheckDefault">로드페이 선불카드 구매 이용약관 동의</label> -->
+
+          <a href="https://lordpaywww.lordsystem.io/terms/4.로드페이약관/20.개인정보동의/개인정보 제3자 제공 동의(로드페이).htm" onclick="checkAgree();" title="새창열림" target="_blank"; style="color: black"><u>로드페이 선불카드 구매 이용약관동의</u></a>
+        </div>
+
+        <div class="form-check">
+          <input checked class="form-check-input" id="flexCheckChecked" type="checkbox" value=""> 
+         <!--  <label class="form-check-label" for="flexCheckChecked">가상계좌 사용 이용 동의</label> -->
+          <a href="https://lordpaywww.lordsystem.io/terms/4.%EB%A1%9C%EB%93%9C%ED%8E%98%EC%9D%B4%EC%95%BD%EA%B4%80/20.%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%8F%99%EC%9D%98/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%A0%9C3%EC%9E%90%20%EC%A0%9C%EA%B3%B5%20%EB%8F%99%EC%9D%98(%EB%A1%9C%EB%93%9C%ED%8E%98%EC%9D%B4).htm" onclick="checkAgree();" title="새창열림" target="_blank"; style="color: black"><u>가상계좌 사용 이용 동의</u></a>
+
+        </div>
+
+
+        <div class="form-check">
+          <input class="form-check-input" id="flexCheckDefault" type="checkbox" value=""> 
+
+         <!--  <label class="form-check-label" for="flexCheckDefault">개인정보 처리 방침 동의</label> -->
+
+           <a href="https://lordpaywww.lordsystem.io/terms/4.%EB%A1%9C%EB%93%9C%ED%8E%98%EC%9D%B4%EC%95%BD%EA%B4%80/20.%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%8F%99%EC%9D%98/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%A0%9C3%EC%9E%90%20%EC%A0%9C%EA%B3%B5%20%EB%8F%99%EC%9D%98(%EB%A1%9C%EB%93%9C%ED%8E%98%EC%9D%B4).htm" onclick="checkAgree();" title="새창열림" target="_blank"; style="color: black"><u>개인정보 처리 방침 동의</u></a>
+        </div>
+        
+
+        <div class="form-check">
+          <input checked class="form-check-input" id="flexCheckChecked" type="checkbox" value=""> <label class="form-check-label" for="flexCheckChecked">보이스피싱 또는 입금 사기 거래가 아님을 확인하였습니다.</label>
+        </div>
+    
+
+    </div>
+    
+    <div class="mb-5 mt-5 container">
+
+      <div class="block2-btn-box">
+        <button class="btn btn-secondary btn-md col-6 shadow-sm" type="button">취소하기</button>
+
+       <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-md col-6 shadow-sm" data-bs-target="#exampleModal" data-bs-toggle="modal" id="button-addon2" type="button">등록하기</button> 
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content container">
+              <div class="modal-body row justify-content-center">
+                먼저 본인인증을 해주세요.
+              </div>
+              <div class="modal-footer row">
+                <button class="btn btn-primary justify-content-center" data-bs-dismiss="modal" type="button">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+     
+
+
+    </div>
+  
+
+  </div>
+
+  
+</body>
+
+
+<footer class="footer container-fluid ">
+    <div class="footer-box">
+      <div class="footer-text">
+       <a href="https://www.youtube.com/" >상담 채팅 바로가기</a>
+       <p>(평일 10:00 ~ 17:00)</p><br><br><br><br><br>
+       <p>서울특별시 송파구 오금로 87 잠실리시온빌딩 1123호<br>
+          주식회사 로드시스템 대표이사 장양호<br>
+          사업자등록번호 : 443-87-00116<br>
+          ⓒ LORDSYSTEM Corp</p>
+      </div>     
+    </div>
+</footer>
+
+</html>
