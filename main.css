@@ -19,7 +19,7 @@ body{
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   #block1, #block2{
   margin: 0 auto;  
   width: 85%;
